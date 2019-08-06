@@ -10,11 +10,6 @@ const useStyles = makeStyles(theme => ({
     padding: "10px",
     color: "#db5704"
   },
-  list: {
-    width: "100%",
-    maxWidth: "800px",
-    backgroundColor: theme.palette.background.paper
-  },
   chip: {
     margin: theme.spacing(1),
     textDecoration: "bold",
@@ -70,7 +65,7 @@ const Skills = () => {
         Skills
       </Typography>
       <Grid container alignItems="center" justify="center" spacing={2}>
-        <Grid item xs={6}>
+        <Grid item xs={8}>
           {progLanguages.map(lang => (
             <Chip
               variant="default"
@@ -91,7 +86,7 @@ const Skills = () => {
         Tools & Frameworks
       </Typography>
       <Grid container alignItems="center" justify="center" spacing={2}>
-        <Grid item xs={6} style={{ marginBottom: "30px" }}>
+        <Grid item xs={8} style={{ marginBottom: "30px" }}>
           {skills.map(skill => (
             <Chip
               variant="default"

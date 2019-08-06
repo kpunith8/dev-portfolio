@@ -30,7 +30,7 @@ const AboutMe = () => {
         About Me
       </Typography>
       <Grid container alignItems="center" justify="center" spacing={2}>
-        <Grid item xs={7} style={{ marginBottom: "30px" }}>
+        <Grid item xs={11} style={{ marginBottom: "30px" }}>
           <Card>
             <CardContent>
               <Typography variant="body1" className={classes.aboutInfo}>
@@ -40,8 +40,8 @@ const AboutMe = () => {
                 as React. I love building things with simplicity in mind and I'm
                 most attracted to solving real customer problems. I'm looking
                 for a role where I can gain experience and solve problems
-                eloquently. Have a long term vision to improve and bring
-                value to the organization through constant learning and mentoring.
+                eloquently. Have a long term vision to improve and bring value
+                to the organization through constant learning and mentoring.
               </Typography>
             </CardContent>
           </Card>

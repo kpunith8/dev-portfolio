@@ -25,7 +25,7 @@ const Education = () => {
         Education
       </Typography>
       <Grid container alignItems="center" justify="center" spacing={2}>
-        <Grid item xs={7}>
+        <Grid item xs={11}>
           <Card>
             <CardContent>
               <Typography color="textPrimary" gutterBottom variant="h5">
@@ -43,7 +43,7 @@ const Education = () => {
         </Grid>
       </Grid>
       <Grid container alignItems="center" justify="center" spacing={2}>
-        <Grid item xs={7} style={{ marginBottom: "30px" }}>
+        <Grid item xs={11} style={{ marginBottom: "30px" }}>
           <Card>
             <CardContent>
               <Typography color="textPrimary" gutterBottom variant="h5">

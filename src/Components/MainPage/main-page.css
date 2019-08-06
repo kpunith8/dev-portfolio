@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(255,255, 0, 0.2)
+}
+
 .main-page {
   display: grid;
   align-items: center;
@@ -20,10 +24,10 @@
 
 @media (max-width: 700px) {
   .name {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .role {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
