@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.fa5adcbe.chunk.css",
-    "main.js": "/dev-portfolio/static/js/main.dbbbbb18.chunk.js",
-    "main.js.map": "/dev-portfolio/static/js/main.dbbbbb18.chunk.js.map",
+    "main.css": "/dev-portfolio/static/css/main.65c98cd3.chunk.css",
+    "main.js": "/dev-portfolio/static/js/main.ed3db76a.chunk.js",
+    "main.js.map": "/dev-portfolio/static/js/main.ed3db76a.chunk.js.map",
     "runtime~main.js": "/dev-portfolio/static/js/runtime~main.e91790c5.js",
     "runtime~main.js.map": "/dev-portfolio/static/js/runtime~main.e91790c5.js.map",
-    "static/js/2.ad970900.chunk.js": "/dev-portfolio/static/js/2.ad970900.chunk.js",
-    "static/js/2.ad970900.chunk.js.map": "/dev-portfolio/static/js/2.ad970900.chunk.js.map",
+    "static/js/2.0dda4a8a.chunk.js": "/dev-portfolio/static/js/2.0dda4a8a.chunk.js",
+    "static/js/2.0dda4a8a.chunk.js.map": "/dev-portfolio/static/js/2.0dda4a8a.chunk.js.map",
     "index.html": "/dev-portfolio/index.html",
-    "precache-manifest.12e8844e5f5951ec493fc8dd9f4cc799.js": "/dev-portfolio/precache-manifest.12e8844e5f5951ec493fc8dd9f4cc799.js",
+    "precache-manifest.b92611552a899a40c89383cf35753f90.js": "/dev-portfolio/precache-manifest.b92611552a899a40c89383cf35753f90.js",
     "service-worker.js": "/dev-portfolio/service-worker.js",
-    "static/css/main.fa5adcbe.chunk.css.map": "/dev-portfolio/static/css/main.fa5adcbe.chunk.css.map"
+    "static/css/main.65c98cd3.chunk.css.map": "/dev-portfolio/static/css/main.65c98cd3.chunk.css.map"
   }
 }
