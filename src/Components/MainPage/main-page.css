@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255,255, 0, 0.2)
+  background-color: rgb(255, 255, 0, 0.2);
 }
 
 .main-page {
@@ -22,12 +22,60 @@ body {
   color: blueviolet;
 }
 
+.about-me {
+  font-size: 30px;
+  margin: 7px 0;
+  color: #db5704;
+  font-weight: bold;
+}
+
+.experience {
+  font-size: 30px;
+  margin: 7px 0;
+  color: #db5704;
+  font-weight: bold;
+}
+
+.education {
+  font-size: 30px;
+  margin: 7px 0;
+  color: #db5704;
+  font-weight: bold;
+}
+
+.skill {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #db5704;
+  font-weight: bold;
+}
+
 @media (max-width: 700px) {
   .name {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .role {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .about-me {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .experience {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .education {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .skill {
+    font-size: 25px;
+    font-weight: bold;
   }
 }

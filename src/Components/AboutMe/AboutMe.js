@@ -7,8 +7,7 @@ const useStyles = makeStyles(theme => ({
     display: "grid",
     alignItems: "center",
     justifyItems: "center",
-    padding: "10px",
-    color: "#db5704"
+    padding: "10px"
   },
   aboutInfo: {
     fontSize: "15px",
@@ -20,15 +19,11 @@ const useStyles = makeStyles(theme => ({
 const AboutMe = () => {
   const classes = useStyles();
   return (
-    <div style={{ backgroundColor: "lightgray", margin: "0px" }}>
-      <Typography
-        color="textPrimary"
-        gutterBottom
-        variant="h4"
-        className={classes.aboutMe}
-      >
-        About Me
-      </Typography>
+    <div
+      style={{ backgroundColor: "lightgray", margin: "0px" }}
+      className={classes.aboutMe}
+    >
+      <p className="about-me">About Me</p>
       <Grid container alignItems="center" justify="center" spacing={2}>
         <Grid item xs={11} style={{ marginBottom: "30px" }}>
           <Card>

@@ -7,24 +7,19 @@ const useStyles = makeStyles(theme => ({
     display: "grid",
     alignItems: "center",
     justifyItems: "center",
-    padding: "10px",
-    color: "#db5704"
+    padding: "10px"
   }
 }));
 
 const Education = () => {
   const classes = useStyles();
   return (
-    <div style={{ backgroundColor: "lightgray", margin: "0px" }}>
-      <Typography
-        color="textPrimary"
-        gutterBottom
-        variant="h4"
-        className={classes.edu}
-      >
-        Education
-      </Typography>
-      <Grid container alignItems="center" justify="center" spacing={2}>
+    <div
+      style={{ backgroundColor: "lightgray", margin: "0px" }}
+      className={classes.edu}
+    >
+      <p className="education">Education</p>
+      <Grid container alignItems="center" justify="center" spacing={3}>
         <Grid item xs={11}>
           <Card>
             <CardContent>
@@ -42,7 +37,8 @@ const Education = () => {
           </Card>
         </Grid>
       </Grid>
-      <Grid container alignItems="center" justify="center" spacing={2}>
+      <br/>
+      <Grid container alignItems="center" justify="center" spacing={3}>
         <Grid item xs={11} style={{ marginBottom: "30px" }}>
           <Card>
             <CardContent>

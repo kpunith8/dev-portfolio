@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Chip, Typography, Avatar } from "@material-ui/core";
+import { Grid, Chip, Avatar } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   skills: {
@@ -32,6 +32,9 @@ const Skills = () => {
     { name: "Java 8", stars: 7 },
     { name: "Stream API", stars: 7 },
     { name: "Maven", stars: 6 },
+    { name: "Jenkins", stars: 7 },
+    { name: "Flutter", stars: 5 },
+    { name: "Dart", stars: 5 },
     { name: "ES6", stars: 7.5 },
     { name: "Redux", stars: 8 },
     { name: "Express.js", stars: 7 },
@@ -40,10 +43,14 @@ const Skills = () => {
     { name: "MERN Stack", stars: 6 },
     { name: "GraphQL", stars: 5 },
     { name: "NoSQL", stars: 5 },
+    { name: "REST Services", stars: 8 },
+    { name: "JAX-RS", stars: 6 },
     { name: "TDD", stars: 7 },
     { name: "Clean Code", stars: 8 },
     { name: "Open Source", stars: 7 },
-    { name: "Functional Programming", stars: 6 }
+    { name: "Functional Programming", stars: 6 },
+    { name: "Eclipse", stars: 8 },
+    { name: "VS Code", stars: 8 }
   ];
 
   const progLanguages = [
@@ -55,15 +62,11 @@ const Skills = () => {
     { name: "CSS", stars: 6.5 }
   ];
   return (
-    <div style={{ backgroundColor: "#d3dbe8", margin: "0px" }}>
-      <Typography
-        color="textPrimary"
-        gutterBottom
-        variant="h4"
-        className={classes.skills}
-      >
-        Skills
-      </Typography>
+    <div
+      style={{ backgroundColor: "#d3dbe8", margin: "0px" }}
+      className={classes.skills}
+    >
+      <p className="skill">Skills</p>
       <Grid container alignItems="center" justify="center" spacing={2}>
         <Grid item xs={8}>
           {progLanguages.map(lang => (
@@ -77,14 +80,7 @@ const Skills = () => {
           ))}
         </Grid>
       </Grid>
-      <Typography
-        color="textPrimary"
-        gutterBottom
-        variant="h4"
-        className={classes.tools}
-      >
-        Tools & Frameworks
-      </Typography>
+      <p className="skill">Tools & Frameworks</p>
       <Grid container alignItems="center" justify="center" spacing={2}>
         <Grid item xs={8} style={{ marginBottom: "30px" }}>
           {skills.map(skill => (
