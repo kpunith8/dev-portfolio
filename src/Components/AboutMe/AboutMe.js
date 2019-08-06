@@ -40,8 +40,8 @@ const AboutMe = () => {
                 as React. I love building things with simplicity in mind and I'm
                 most attracted to solving real customer problems. I'm looking
                 for a role where I can gain experience and solve problems
-                eloquently. Have a long term vision to improve and bring the
-                value organization through constant learning and teaching.
+                eloquently. Have a long term vision to improve and bring
+                value to the organization through constant learning and mentoring.
               </Typography>
             </CardContent>
           </Card>
