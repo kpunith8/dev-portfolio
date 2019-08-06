@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     justifyItems: "center",
     padding: "10px",
-    color: '#db5704'
+    color: "#db5704"
   }
 }));
 
@@ -25,7 +25,7 @@ const Experience = () => {
         Experience
       </Typography>
       <Grid container alignItems="center" justify="center" spacing={2}>
-        <Grid item xs={6}>
+        <Grid item xs={7}>
           <Card>
             <CardContent>
               <Typography color="textPrimary" gutterBottom variant="h5">
@@ -52,7 +52,7 @@ const Experience = () => {
         </Grid>
       </Grid>
       <Grid container alignItems="center" justify="center" spacing={2}>
-        <Grid item xs={6}>
+        <Grid item xs={7}>
           <Card>
             <CardContent>
               <Typography color="textPrimary" gutterBottom variant="h5">
@@ -67,7 +67,7 @@ const Experience = () => {
         </Grid>
       </Grid>
       <Grid container alignItems="center" justify="center" spacing={2}>
-        <Grid item xs={6}  style={{marginBottom: '30px'}}>
+        <Grid item xs={7} style={{ marginBottom: "30px" }}>
           <Card>
             <CardContent>
               <Typography color="textPrimary" gutterBottom variant="h5">
