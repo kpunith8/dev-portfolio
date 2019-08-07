@@ -27,7 +27,7 @@ const Education = () => {
                 P.E.S College of Engineering, Mandya
               </Typography>
               <Typography color="textSecondary" variant="subtitle1">
-                Master of Technology
+                Masters of Technology
               </Typography>
               <Typography color="textSecondary" variant="subtitle2">
                 Computer Science and Engineering
@@ -46,7 +46,7 @@ const Education = () => {
                 Reva College of Engineering, Bengaluru
               </Typography>
               <Typography color="textSecondary" variant="subtitle1">
-                Bachelor of Technology
+                Bachelors of Technology
               </Typography>
               <Typography color="textSecondary" variant="subtitle2">
                 Computer Science and Engineering

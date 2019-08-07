@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   chip: {
     margin: theme.spacing(1),
     textDecoration: "bold",
-    fontSize: "17px"
+    fontSize: "15px"
   },
   tools: {
     display: "grid",
