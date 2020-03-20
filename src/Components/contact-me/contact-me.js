@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon, Typography, Breadcrumbs, Link } from "@material-ui/core";
+import { Typography, Breadcrumbs, Link } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     color: "green"
   },
   icon: {
-    margin: theme.spacing(2)
+    margin: theme.spacing(1)
   }
 }));
 
@@ -19,32 +19,16 @@ const ContactMe = () => {
   const classes = useStyles();
 
   return (
-    <div style={{ backgroundColor: "lightgray", margin: "0px" }}>
-      <Typography
-        color="textPrimary"
-        gutterBottom
-        variant="h5"
-        className={classes.contact}
-      >
-        Contact Me
-      </Typography>
+    <div style={{ margin: "0px" }}>
       <div
         className={classes.contact}
         style={{ color: "black", marginTop: "-10px" }}
       >
-        <div style={{ display: "flex", marginTop: "-10px" }}>
-          <Typography color="textSecondary">
-            Copyright &copy; 2019 Punith K
-          </Typography>
-        </div>
-        <div style={{ display: "flex", marginTop: "10px" }}>
-          <Icon>email</Icon>{" "}
-          <Typography style={{ marginLeft: "5px" }} variant="body1">
-            kpunith8@gmail.com
-          </Typography>
-        </div>
         <div style={{ display: "flex", marginTop: "10px" }}>
           <Breadcrumbs>
+            <Link color="textPrimary" href="mailto:kpunith8@gmail.com">
+              kpunith8@gmail.com
+            </Link>
             <Link color="textPrimary" href="https://github.com/kpunith8/">
               Github
             </Link>
@@ -61,6 +45,11 @@ const ContactMe = () => {
               LinkedIn
             </Link>
           </Breadcrumbs>
+        </div>
+        <div style={{ display: "flex", marginTop: "10px" }}>
+          <Typography color="textSecondary">
+            &copy; {new Date().getFullYear()} Punith K
+          </Typography>
         </div>
       </div>
     </div>
