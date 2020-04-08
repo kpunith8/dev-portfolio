@@ -1,18 +1,22 @@
 import React from "react";
 import { Typography, Breadcrumbs, Link } from "@material-ui/core";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import EmailIcon from "@material-ui/icons/Email";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   contact: {
     display: "grid",
     alignItems: "center",
     justifyItems: "center",
     padding: "10px",
-    color: "green"
+    color: "green",
   },
   icon: {
-    margin: theme.spacing(1)
-  }
+    margin: theme.spacing(1),
+  },
 }));
 
 const ContactMe = () => {
@@ -27,22 +31,22 @@ const ContactMe = () => {
         <div style={{ display: "flex", marginTop: "10px" }}>
           <Breadcrumbs>
             <Link color="textPrimary" href="mailto:kpunith8@gmail.com">
-              kpunith8@gmail.com
+              <EmailIcon />
             </Link>
             <Link color="textPrimary" href="https://github.com/kpunith8/">
-              Github
+              <GitHubIcon />
             </Link>
             <Link
               color="textPrimary"
               href="https://twitter.com/techie_punith_k"
             >
-              Twitter
+              <TwitterIcon />
             </Link>
             <Link
               color="textPrimary"
               href="https://www.linkedin.com/in/punith-k-7902b328/"
             >
-              LinkedIn
+              <LinkedInIcon />
             </Link>
           </Breadcrumbs>
         </div>

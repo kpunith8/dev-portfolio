@@ -33,43 +33,14 @@ body {
   color: gray;
 }
 
-.about-me {
-  font-size: 30px;
-  margin: 10px 50px;
-  color:var(--header-color);
-  font-weight: bold;
-}
-
-.experience {
-  font-size: 30px;
-  margin: 10px 50px;
-  color: var(--header-color);
-
-  font-weight: bold;
-}
-
-.education {
+.title-header {
   font-size: 30px;
   margin: 10px 50px;
   color: var(--header-color);
   font-weight: bold;
 }
 
-.skills {
-  font-size: 30px;
-  margin: 10px 50px;
-  color: var(--header-color);
-  font-weight: bold;
-}
-
-.tools {
-  font-size: 30px;
-  margin: 10px 50px;
-  color: var(--header-color);
-  font-weight: bold;
-}
-
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .name {
     font-size: 45px;
   }
@@ -78,32 +49,8 @@ body {
     font-size: 20px;
   }
 
-  .about-me {
+  .title-header {
     margin: 5px 25px;
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  .experience {
-    margin: 10px 25px;
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  .education {
-    margin: 10px 25px;
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  .skills {
-    margin: 10px 25px;
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  .tools {
-    margin: 10px 25px;
     font-size: 25px;
     font-weight: bold;
   }
