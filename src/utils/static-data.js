@@ -13,7 +13,7 @@ export const educations = [
     period: "Oct-2012 - June-2014",
   },
   {
-    college: "Reva College of Engineering, Bengaluru",
+    college: "Reva College of Engineering, Bengalore",
     course: "BE, Computer Science",
     period: "Aug-2007 - June-2011",
   },
@@ -23,22 +23,22 @@ export const experiences = [
   {
     company: "Lookout India, LLP",
     role: "Senior Software Engineer",
-    period: "Sep-2019",
+    period: "Sep~2019",
   },
   {
     company: "Cerner Healthcare Corporation India Pvt. Ltd",
     role: "Associate Senior Software Engineer",
-    period: "Oct-2017 - Aug-2019",
+    period: "Oct-~017 - Aug~2019",
   },
   {
     company: "Cerner Healthcare Corporation India Pvt. Ltd",
     role: "Software Engineer",
-    period: "Aug-2017 - Sep-2017",
+    period: "Aug~2017 - Sep~2017",
   },
   {
     company: "Freelance Web and Android Developer",
     role: "Full Stack Web Developer",
-    period: "July-2014 - Aug-2015",
+    period: "July~2014 - Aug~2015",
   },
 ];
 
