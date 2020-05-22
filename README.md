@@ -2,5 +2,7 @@
 
 - Deployed using `gh-pages` to github pages
 
-- Used packages, `create-react-app`, `react`, `@material-ui/core`, and `gh-pages`
+- Used packages, `create-react-app`, `react`, `@material-ui/core`, and `gh-pages`'
+
+- Deployed to `vercel`
 
