@@ -1,10 +1,10 @@
 import React from "react";
 import { Container } from "@material-ui/core";
-import aboutMe from "../about-me/about-me";
+import AboutMe from "../about-me/about-me";
 import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
 import Skills from "../Skills/Skills";
-import contactMe from "../contact-me/contact-me";
+import ContactMe from "../contact-me/contact-me";
 import "./main-page.css";
 
 const MainPage = () => (
