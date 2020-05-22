@@ -1,0 +1,57 @@
+:root {
+  --header-color: rgb(168, 96, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(156, 151, 87, 0.22872899159663862) 100%
+  );
+}
+
+.main-page {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: -70px;
+}
+
+.name {
+  font-size: 100px;
+  margin-top: 100px;
+  color: teal;
+  margin-bottom: 0;
+}
+
+.role {
+  margin: 0;
+  font-size: 40px;
+  color: gray;
+}
+
+.title-header {
+  font-size: 30px;
+  margin: 10px 50px;
+  color: var(--header-color);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .name {
+    font-size: 45px;
+  }
+
+  .role {
+    font-size: 20px;
+  }
+
+  .title-header {
+    margin: 5px 25px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
