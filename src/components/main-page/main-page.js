@@ -4,23 +4,23 @@ import AboutMe from "../about-me/about-me";
 import Experience from "../experience/experience";
 import Education from "../education/education";
 import Skills from "../skills/skills";
-import ContactMe from "../contact-me/contact-me";
+import Copyright from "../copyright/copyright";
 import "./main-page.css";
+import NavBar from "../navbar/navbar";
 
 const MainPage = () => (
-  <Container>
-    <div className="main-page">
-      <p className="name">PUNITH K</p>
-      <p className="role" style={{ marginBottom: "20px" }}>
-        Full Stack Web Developer
-      </p>
-    </div>
-    <AboutMe />
-    <Experience />
-    <Education />
-    <Skills />
-    <ContactMe />
-  </Container>
+  <>
+    <NavBar />
+    <Container>
+      <div className="main">
+        <AboutMe />
+        <Experience />
+        <Education />
+        <Skills />
+        <Copyright />
+      </div>
+    </Container>
+  </>
 );
 
 export default MainPage;

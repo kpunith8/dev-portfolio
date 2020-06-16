@@ -1,7 +1,7 @@
 import React from "react";
 import { uuid } from "uuidv4";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Chip, Avatar } from "@material-ui/core";
+import { Grid, Chip } from "@material-ui/core";
 import { skills, progLanguages } from "../../utils/static-data";
 
 const useStyles = makeStyles((theme) => ({
@@ -25,11 +25,6 @@ const Skills = () => {
             <Chip
               key={uuid()}
               variant="default"
-              avatar={
-                <Avatar style={{ fontSize: "17px", color: "blue" }}>
-                  {lang.stars}
-                </Avatar>
-              }
               size="medium"
               label={lang.name}
               className={classes.chip}
@@ -44,11 +39,6 @@ const Skills = () => {
             <Chip
               key={uuid()}
               variant="default"
-              avatar={
-                <Avatar style={{ fontSize: "17px", color: "blue" }}>
-                  {skill.stars}
-                </Avatar>
-              }
               size="medium"
               label={skill.name}
               className={classes.chip}
