@@ -9,7 +9,7 @@ const Education = () => (
     {educations.map((edu) => (
       <Content
         key={uuid()}
-        style={{ marginBottom: "20px" }}
+        style={{ marginBottom: 20, marginLeft: -10 }}
         header={edu.college}
         role={edu.course}
         period={edu.period}

@@ -11,31 +11,63 @@ body {
   margin-top: 80px;
 }
 
-.role {
-  margin: 0;
-  font-size: 40px;
-  color: gray;
+.about-info {
+  font-size: 17px;
+  text-align: justify;
+  line-height: 1.8;
 }
 
 .title-header {
-  font-size: 30px;
+  font-size: 28px;
   margin: 10px 50px;
   color: var(--header-color);
   font-weight: bold;
 }
 
+@media screen and (max-width: 1200px) {
+  .title-header {
+    margin: 5px 50px;
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 960px) {
-  .name {
-    font-size: 45px;
+  .title-header {
+    margin: 5px 35px;
   }
 
-  .role {
+  .about-info {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .title-header {
+    margin: 5px 30px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .title-header {
+    margin: 5px 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-header {
+    margin: 5px 20px;
+  }
+
+  .about-info {
     font-size: 20px;
   }
 
-  .title-header {
-    margin: 5px 25px;
-    font-size: 25px;
-    font-weight: bold;
+  .prog,
+  .frameworks,
+  .tools,
+  .about-me,
+  .experience,
+  .education {
+    font-size: 28px;
   }
 }

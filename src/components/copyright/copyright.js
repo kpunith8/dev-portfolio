@@ -7,8 +7,7 @@ const useStyles = makeStyles((theme) => ({
     display: "grid",
     alignItems: "center",
     justifyItems: "center",
-    padding: "10px",
-    color: "green",
+    padding: 10,
   },
 }));
 
@@ -16,12 +15,12 @@ const Copyright = () => {
   const classes = useStyles();
 
   return (
-    <div style={{ margin: "0px" }}>
+    <div style={{ margin: 0 }}>
       <div
         className={classes.contact}
-        style={{ color: "black", marginTop: "-10px" }}
+        style={{ color: "black", marginTop: -10 }}
       >
-        <div style={{ display: "flex", marginTop: "10px" }}>
+        <div style={{ display: "flex", marginTop: 5 }}>
           <Typography color="textSecondary">
             &copy; {new Date().getFullYear()} Punith K
           </Typography>

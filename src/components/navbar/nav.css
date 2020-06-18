@@ -26,28 +26,40 @@
 }
 
 .link {
-  padding: 16px;
+  padding: 8px;
   text-decoration: none;
-  font-size: 17px;
-  font-weight: 200;
-  letter-spacing: 2.5px;
   color: #333;
+}
+
+.linkedin {
+  padding-right: 30px;
 }
 
 .link:hover {
   color: dimgrey;
 }
 
+@media screen and (max-width: 760px) {
+  .user-name {
+    padding-left: 40px;
+    font-size: 24px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .user-name {
-    padding-left: 25px;
-
-    font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
   }
 
   .link {
-    padding: 8px;
-    font-size: 16px;
+    padding: 10px;
+  }
+
+  .linkedin {
+    padding-right: 20px;
+  }
+
+  .twitter {
+    display: none;
   }
 }

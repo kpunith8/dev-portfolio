@@ -9,7 +9,7 @@ const Experience = () => (
     {experiences.map((exp) => (
       <Content
         key={uuid()}
-        style={{ marginBottom: "20px" }}
+        style={{ marginBottom: 20, marginLeft: -10 }}
         header={exp.company}
         role={exp.role}
         period={exp.period}

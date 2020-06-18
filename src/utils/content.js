@@ -16,11 +16,11 @@ const Content = ({ header, role, period, ...props }) => {
         <Typography
           color="textSecondary"
           variant="h6"
-          style={{ fontSize: "16px" }}
+          style={{ fontSize: 18 }}
         >
           {role}
         </Typography>
-        <Typography variant="body2" style={{ marginTop: "5px" }}>
+        <Typography color="textSecondary" variant="h5" style={{ marginTop: 5, fontSize: 16 }}>
           {period}
         </Typography>
       </Grid>
