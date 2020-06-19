@@ -1,5 +1,5 @@
 :root {
-  --header-color: #23a;
+  --header-color: #1ad83b;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .title-header {
-    margin: 5px 50px;
+    margin: 5px 55px;
     font-size: 25px;
   }
 }

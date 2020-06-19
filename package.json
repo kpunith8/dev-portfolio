@@ -11,6 +11,7 @@
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.0",
+    "react-use": "^15.2.5",
     "uuidv4": "^6.0.7"
   },
   "scripts": {

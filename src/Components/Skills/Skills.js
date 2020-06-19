@@ -67,7 +67,6 @@ const Skills = () => {
           ))}
         </Grid>
       </Grid>
-      <hr />
     </>
   );
 };

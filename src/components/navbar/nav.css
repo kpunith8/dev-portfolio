@@ -4,8 +4,8 @@
   position: fixed;
   top: 0; /* must set to top */
   width: 100%;
-  background: white;
-  box-shadow: 0 5px 20px -10px #000;
+  background: #303030;
+  box-shadow: 0 5px 20px -10px #fff;
   min-height: 50px;
 }
 
@@ -41,7 +41,7 @@
 
 @media screen and (max-width: 760px) {
   .user-name {
-    padding-left: 40px;
+    padding-left: 30px;
     font-size: 24px;
   }
 }

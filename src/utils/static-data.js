@@ -1,10 +1,9 @@
 export const aboutMeInfo = `6 years of experience as Full Stack/Web Developer. My expertise is
-in front end web development with NodeJS, JavaScript
-React, and Java. I love writing softwares with simplicity in mind and
-attracted to solve real customer problems. I'm looking for a role
-where I can gain experience and solve real world problems eloquently. Have a
-long term vision to improve and bring value to the organization
-through constant learning.`;
+in front end with React, JavaScript, Flutter, and React Native, backend with NodeJS, and Java.
+I love developing softwares with simplicity in mind and
+attracted to solve real world problems. I'm looking for a dynamic role
+where I can utilise my experience to the organization's growth.
+Loves mentoring and learning new things.`;
 
 export const educations = [
   {

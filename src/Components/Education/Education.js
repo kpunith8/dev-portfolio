@@ -15,6 +15,7 @@ const Education = () => (
         period={edu.period}
       />
     ))}
+    <hr />
   </>
 );
 
