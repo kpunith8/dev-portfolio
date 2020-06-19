@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "@material-ui/core";
 import { useLocalStorage } from "react-use";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AboutMe from "../about-me/about-me";
@@ -16,20 +15,16 @@ import "./main-page.css";
 
 const MainPage = () => {
   const [defaultUIMode] = useLocalStorage("pk-portfolio-ui-mode", "dark");
-  // default dark mode is to support mobile browsers
-  const [selectedUIMode, setSelectedUIMode] = useState(defaultUIMode || 'dark');
-  const prefersDarkMode = useMediaQuery(
-    `(prefers-color-scheme: ${selectedUIMode})`
-  );
+  const [selectedUIMode, setSelectedUIMode] = useState(defaultUIMode);
 
   const theme = React.useMemo(
     () =>
       createMuiTheme({
         palette: {
-          type: prefersDarkMode ? "dark" : "light",
+          type: selectedUIMode
         },
       }),
-    [prefersDarkMode]
+    [selectedUIMode]
   );
 
   return (
@@ -45,7 +40,7 @@ const MainPage = () => {
           <Copyright />
         </div>
       </Container>
-      <UIMode prefersDarkMode={prefersDarkMode} setMode={setSelectedUIMode} />
+      <UIMode prefersDarkMode={selectedUIMode === 'dark' ? true : false} setMode={setSelectedUIMode} />
     </ThemeProvider>
   );
 };

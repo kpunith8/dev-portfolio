@@ -39,10 +39,6 @@ body {
   .about-info {
     font-size: 19px;
   }
-
-  .ui-mode {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 760px) {
