@@ -16,7 +16,7 @@ import "./main-page.css";
 
 const MainPage = () => {
   const [defaultUIMode] = useLocalStorage("pk-portfolio-ui-mode", "dark");
-  // default value is to support mobile browsers
+  // default dark mode is to support mobile browsers
   const [selectedUIMode, setSelectedUIMode] = useState(defaultUIMode || 'dark');
   const prefersDarkMode = useMediaQuery(
     `(prefers-color-scheme: ${selectedUIMode})`
