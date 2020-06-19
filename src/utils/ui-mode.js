@@ -2,16 +2,24 @@ import React, { useEffect } from "react";
 import { useLocalStorage } from "react-use";
 import { Brightness4, BrightnessHigh } from "@material-ui/icons";
 import { Fab } from "@material-ui/core";
+import Bowser from "bowser";
 
 const UIMode = ({ prefersDarkMode, setMode }) => {
   // eslint-disable-next-line no-unused-vars
   const [__, setDefaultUIMode] = useLocalStorage("pk-portfolio-ui-mode");
+  const browser = Bowser.getParser(window.navigator.userAgent);
 
   const onModeChange = () => {
     if (prefersDarkMode) {
+      if (["Android", "iOS"].includes(browser.getOSName())) {
+        setMode("light");
+      }
       setDefaultUIMode("light");
       setMode("light");
     } else {
+      if (["Android", "iOS"].includes(browser.getOSName())) {
+        setMode("dark");
+      }
       setDefaultUIMode("dark");
       setMode("dark");
     }
