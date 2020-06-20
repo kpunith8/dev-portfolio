@@ -3,13 +3,14 @@ import { Link, Tooltip, Zoom } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const NavLink = ({ toolTipTitle, url, icon: Icon, ...props }) => {
-  const media480 = useMediaQuery("(min-width:480px)");
-  const [iconFontSize, setIconFontSize] = useState(32);
+  const media480 = useMediaQuery("(max-width:480px)");
+  const [iconFontSize, setIconFontSize] = useState("36px");
 
   useEffect(() => {
     if (media480) {
-      setIconFontSize(36);
+      setIconFontSize("34px");
     }
+    return () => setIconFontSize("36px");
   }, [media480]);
 
   return (
