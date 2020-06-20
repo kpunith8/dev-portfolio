@@ -21,7 +21,7 @@ const MainPage = () => {
     () =>
       createMuiTheme({
         palette: {
-          type: selectedUIMode
+          type: selectedUIMode,
         },
       }),
     [selectedUIMode]
@@ -40,7 +40,10 @@ const MainPage = () => {
           <Copyright />
         </div>
       </Container>
-      <UIMode prefersDarkMode={selectedUIMode === 'dark' ? true : false} setMode={setSelectedUIMode} />
+      <UIMode
+        prefersDarkMode={selectedUIMode === "dark" ? true : false}
+        setMode={setSelectedUIMode}
+      />
     </ThemeProvider>
   );
 };

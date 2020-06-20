@@ -1,3 +1,8 @@
+import EmailIcon from "@material-ui/icons/Email";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import GitHubIcon from "@material-ui/icons/GitHub";
+
 export const aboutMeInfo = `6 years of experience as Full Stack/Web Developer. My expertise is
 in front end with React, JavaScript, Flutter, and React Native, backend with NodeJS, and Java.
 I love developing softwares with simplicity in mind and
@@ -79,4 +84,31 @@ export const progLanguages = [
   { name: "Python" },
   { name: "HTML5" },
   { name: "CSS3" },
+];
+
+export const websiteUrls = [
+  {
+    url: "mailto:kpunith8@gmail.com",
+    icon: EmailIcon,
+    toolTipTitle: "Email",
+    type: "email",
+  },
+  {
+    url: "https://github.com/kpunith8/",
+    icon: GitHubIcon,
+    toolTipTitle: "Github",
+    type: "github",
+  },
+  {
+    url: "https://twitter.com/techie_punith_k",
+    icon: TwitterIcon,
+    toolTipTitle: "Twitter",
+    type: "twitter",
+  },
+  {
+    url: "https://www.linkedin.com/in/punith-k-7902b328/",
+    icon: LinkedInIcon,
+    toolTipTitle: "LinkedIn",
+    type: "linkedin",
+  },
 ];

@@ -36,7 +36,7 @@
 }
 
 .link:hover {
-  color: dimgrey;
+  color:#ff6333;
 }
 
 @media screen and (max-width: 760px) {

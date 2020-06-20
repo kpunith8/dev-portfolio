@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocalStorage } from "react-use";
 import { Brightness4, BrightnessHigh } from "@material-ui/icons";
-import { Fab } from "@material-ui/core";
+import { Fab, Tooltip, Zoom } from "@material-ui/core";
 
 const UIMode = ({ prefersDarkMode, setMode }) => {
   // eslint-disable-next-line no-unused-vars
@@ -37,24 +37,28 @@ const UIMode = ({ prefersDarkMode, setMode }) => {
   return (
     <div className="ui-mode">
       {prefersDarkMode ? (
-        <Fab
-          aria-label="light-mode"
-          className="light-mode"
-          style={{ position: "fixed", bottom: 10, right: 15, color: "black" }}
-          onClick={onModeChange}
-        >
-          <BrightnessHigh />
-        </Fab>
+        <Tooltip title="Toggle dark theme" TransitionComponent={Zoom}>
+          <Fab
+            aria-label="light-mode"
+            className="light-mode"
+            style={{ position: "fixed", bottom: 10, right: 15 }}
+            onClick={onModeChange}
+          >
+            <BrightnessHigh />
+          </Fab>
+        </Tooltip>
       ) : (
-        <Fab
-          aria-label="black-mode"
-          className="black-mode"
-          color={"inherit"}
-          style={{ position: "fixed", bottom: 10, right: 15 }}
-          onClick={onModeChange}
-        >
-          <Brightness4 />
-        </Fab>
+        <Tooltip title="Toggle light theme" TransitionComponent={Zoom}>
+          <Fab
+            aria-label="black-mode"
+            className="black-mode"
+            color={"primary"}
+            style={{ position: "fixed", bottom: 10, right: 15 }}
+            onClick={onModeChange}
+          >
+            <Brightness4 />
+          </Fab>
+        </Tooltip>
       )}
     </div>
   );

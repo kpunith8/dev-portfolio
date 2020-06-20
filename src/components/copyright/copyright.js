@@ -20,7 +20,7 @@ const Copyright = () => {
         className={classes.contact}
         style={{ color: "black", marginTop: -10 }}
       >
-        <div style={{ display: "flex", marginTop: 5 }}>
+        <div style={{ display: "flex", marginTop: 20, marginBottom: 30 }}>
           <Typography color="textSecondary">
             &copy; {new Date().getFullYear()} Punith K
           </Typography>
