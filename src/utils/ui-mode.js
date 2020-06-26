@@ -9,6 +9,7 @@ const UIMode = ({ prefersDarkMode, setMode }) => {
 
   const onModeChange = () => {
     if (prefersDarkMode) {
+      document.body.style.transition = "background 0.4s linear";
       setDefaultUIMode("light");
       setMode("light");
     } else {
@@ -19,18 +20,13 @@ const UIMode = ({ prefersDarkMode, setMode }) => {
 
   useEffect(() => {
     const navStyles = document.querySelector(".nav-links");
-    const root = document.documentElement;
 
     if (!prefersDarkMode) {
       navStyles.style.background = "#fff";
-      navStyles.style.boxShadow = "0 5px 20px -10px #000";
-
-      root.style.setProperty("--header-color", "#23a");
+      navStyles.style.boxShadow = "0 5px 10px -10px #000";
     } else {
       navStyles.style.background = "#303030";
-      navStyles.style.boxShadow = "0 5px 15px -10px #fff";
-
-      root.style.setProperty("--header-color", "#1ad83b");
+      navStyles.style.boxShadow = "0 5px 10px -10px #fff";
     }
   }, [prefersDarkMode]);
 

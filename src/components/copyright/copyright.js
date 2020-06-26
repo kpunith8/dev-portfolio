@@ -22,7 +22,7 @@ const Copyright = () => {
       >
         <div style={{ display: "flex", marginTop: 20, marginBottom: 30 }}>
           <Typography color="textSecondary">
-            &copy; {new Date().getFullYear()} Punith K
+            Copyright &copy; {new Date().getFullYear()} Punith K
           </Typography>
         </div>
       </div>

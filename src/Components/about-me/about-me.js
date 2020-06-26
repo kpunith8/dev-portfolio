@@ -9,6 +9,7 @@ const AboutMe = () => (
         <p className="about-info">{aboutMeInfo}</p>
       </Grid>
     </Grid>
+    <hr className="line-break" />
   </>
 );
 

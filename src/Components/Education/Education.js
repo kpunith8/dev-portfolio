@@ -1,11 +1,15 @@
 import React from "react";
 import { uuid } from "uuidv4";
+import SchoolIcon from "@material-ui/icons/School";
 import Content from "../../utils/content";
 import { educations } from "../../utils/static-data";
 
 const Education = () => (
   <>
-    <p className="title-header education">Education</p>
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <p className="title-header education">Education</p>
+      <SchoolIcon className="s-icon" style={{ fontSize: 40 }} />
+    </div>
     {educations.map((edu) => (
       <Content
         key={uuid()}
@@ -15,7 +19,7 @@ const Education = () => (
         period={edu.period}
       />
     ))}
-    <hr />
+    <hr className="line-break" />
   </>
 );
 

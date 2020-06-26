@@ -3,23 +3,20 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
-export const aboutMeInfo = `6 years of experience as Full Stack/Web Developer. My expertise is
-in front end with React, JavaScript, Flutter, and React Native, backend with NodeJS, and Java.
-I love developing softwares with simplicity in mind and
-attracted to solve real world problems. I'm looking for a dynamic role
-where I can utilise my experience to the organization's growth.
-Loves mentoring and learning new things.`;
+export const aboutMeInfo = `Full-stack Web Developer, with a strong educational background in computer science.
+My expertise is in front end with React, JavaScript, Flutter, and React Native, backend with NodeJS and Java.
+I love solving real world problems. Loves reading about tech and life. A Mentor and a motivator`;
 
 export const educations = [
   {
     college: "P.E.S College of Engineering, Mandya",
     course: "M.Tech, Computer Science",
-    period: "OCT-2012 - JUN-2014",
+    period: "October 2012 - June 2014",
   },
   {
     college: "Reva College of Engineering, Bengaluru",
     course: "BE, Computer Science",
-    period: "AUG-2007 - JUN-2011",
+    period: "August 2007 - June 2011",
   },
 ];
 
@@ -27,22 +24,22 @@ export const experiences = [
   {
     company: "Lookout India, LLP",
     role: "Senior Software Engineer",
-    period: "SEP-2019",
+    period: "September 2019 - Current",
   },
   {
     company: "Cerner Healthcare Corporation India Pvt. Ltd",
     role: "Associate Senior Software Engineer",
-    period: "OCT-2017 - AUG-2019",
+    period: "October 2017 - August 2019",
   },
   {
     company: "Cerner Healthcare Corporation India Pvt. Ltd",
     role: "Software Engineer",
-    period: "AUG-2017 - SEP-2017",
+    period: "August 2017 - September 2017",
   },
   {
     company: "Freelance Web and Android Developer",
     role: "Full Stack Web Developer",
-    period: "JUL-2014 - AUG-2015",
+    period: "July 2014 - August 2015",
   },
 ];
 
@@ -56,7 +53,7 @@ export const tools = [
 ];
 
 export const frameworks = [
-  { name: "React" },
+  { name: "ReactJS" },
   { name: "NodeJS" },
   { name: "MERN Stack" },
   { name: "MongoDB" },
