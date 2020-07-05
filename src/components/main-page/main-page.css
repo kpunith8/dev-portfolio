@@ -23,9 +23,7 @@ body {
   background: linear-gradient(90deg, #e48a28 0, #b59649 50%, #8a405a);
   height: 1.5px;
   border: none;
-  margin: auto;
   margin: 1.5rem 0;
-  /* width: 20%; */
 }
 
 .s-icon {

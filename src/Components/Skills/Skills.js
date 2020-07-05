@@ -22,11 +22,11 @@ const Skills = () => {
   return (
     <>
       <div style={{ display: "flex", alignItems: "center" }}>
-        <p className="title-header prog">Tech Skills</p>
-        <CodeIcon className="s-icon" style={{ fontSize: 40 }} />
+        <p className="title-header tech-skills">Tech Skills</p>
+        <CodeIcon className="s-icon skills-icon" style={{ fontSize: 40 }} />
       </div>
       <Grid container alignItems="center" justify="center" spacing={3}>
-        <Grid item xs={11} style={{ marginTop: 10 }}>
+        <Grid className="skills-grid" item xs={11} style={{ marginTop: 10 }}>
           {progLanguages.map((lang) => (
             <Chip
               key={uuid()}
@@ -43,10 +43,13 @@ const Skills = () => {
 
       <div style={{ display: "flex", alignItems: "center" }}>
         <p className="title-header frameworks">Libraries/Frameworks</p>
-        <ListAltIcon className="s-icon" style={{ fontSize: 36 }} />
+        <ListAltIcon
+          className="s-icon frameworks-icon"
+          style={{ fontSize: 36 }}
+        />
       </div>
       <Grid container alignItems="center" justify="center" spacing={3}>
-        <Grid item xs={11} style={{ marginTop: 10 }}>
+        <Grid className="libs-grid" item xs={11} style={{ marginTop: 10 }}>
           {frameworks.map((skill) => (
             <Chip
               key={uuid()}
@@ -63,10 +66,15 @@ const Skills = () => {
 
       <div style={{ display: "flex", alignItems: "center" }}>
         <p className="title-header tools">Tools</p>
-        <BuildIcon className="s-icon" style={{ fontSize: 32 }} />
+        <BuildIcon className="s-icon tools-icon" style={{ fontSize: 32 }} />
       </div>
       <Grid container alignItems="center" justify="center" spacing={3}>
-        <Grid item xs={11} style={{ marginBottom: 20, marginTop: 10 }}>
+        <Grid
+          className="tools-grid"
+          item
+          xs={11}
+          style={{ marginBottom: 20, marginTop: 10 }}
+        >
           {tools.map((skill) => (
             <Chip
               key={uuid()}

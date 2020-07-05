@@ -2,10 +2,10 @@ import React from "react";
 import { Grid, Typography } from "@material-ui/core";
 import DateRangeIcon from "@material-ui/icons/DateRange";
 
-const Content = ({ header, role, period, ...props }) => {
+const Content = ({ header, role, period, className, ...props }) => {
   return (
     <Grid container alignItems="center" justify="center" spacing={3} {...props}>
-      <Grid item xs={11}>
+      <Grid className={className} item xs={11}>
         <Typography
           color="textPrimary"
           gutterBottom

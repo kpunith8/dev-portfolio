@@ -8,7 +8,7 @@ const Education = () => (
   <>
     <div style={{ display: "flex", alignItems: "center" }}>
       <p className="title-header education">Education</p>
-      <SchoolIcon className="s-icon" style={{ fontSize: 40 }} />
+      <SchoolIcon className="s-icon education-icon" style={{ fontSize: 40 }} />
     </div>
     {educations.map((edu) => (
       <Content
@@ -17,6 +17,7 @@ const Education = () => (
         header={edu.college}
         role={edu.course}
         period={edu.period}
+        className="education-item"
       />
     ))}
     <hr className="line-break" />

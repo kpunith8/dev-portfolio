@@ -16,11 +16,15 @@
     "uuidv4": "^6.0.7"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "start:cypress_server": "npm run start",
+    "test:cypress": "start-server-and-test start:cypress_server http://localhost:3000/ cypress:run",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run && npx nyc report --reporter=text-summary"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +40,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "istanbul-lib-coverage": "^3.0.0",
+    "@cypress/code-coverage": "^3.8.1",
+    "@cypress/instrument-cra": "^1.1.1",
+    "babel-plugin-istanbul": "^6.0.0",
+    "cypress": "^4.9.0",
+    "cypress-react-unit-test": "^4.9.0",
+    "http-server": "^0.12.3",
+    "start-server-and-test": "^1.11.0"
   }
 }

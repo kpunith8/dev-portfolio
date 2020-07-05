@@ -8,7 +8,7 @@ const Experience = () => (
   <>
     <div style={{ display: "flex", alignItems: "center" }}>
       <p className="title-header experience">Experience</p>
-      <LaptopIcon className="s-icon" style={{ fontSize: 40 }} />
+      <LaptopIcon className="s-icon experience-icon" style={{ fontSize: 40 }} />
     </div>
     {experiences.map((exp) => (
       <Content
@@ -17,6 +17,7 @@ const Experience = () => (
         header={exp.company}
         role={exp.role}
         period={exp.period}
+        className="experience-item"
       />
     ))}
     <hr className="line-break" />
