@@ -97,13 +97,13 @@ export const websiteUrls = [
     type: "github",
   },
   {
-    url: "https://twitter.com/techie_punith_k",
+    url: "https://twitter.com/punith_k_dev",
     icon: TwitterIcon,
     toolTipTitle: "Twitter",
     type: "twitter",
   },
   {
-    url: "https://www.linkedin.com/in/punith-k-7902b328/",
+    url: "https://www.linkedin.com/in/punithk/",
     icon: LinkedInIcon,
     toolTipTitle: "LinkedIn",
     type: "linkedin",
