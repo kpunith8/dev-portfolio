@@ -10,12 +10,7 @@ import Skills from "../skills/skills";
 import Copyright from "../copyright/copyright";
 import NavBar from "../navbar/navbar";
 import UIMode from "../../utils/ui-mode";
-import ReactGA from "react-ga";
-
 import "./main-page.css";
-
-const GOOGLE_ANALYTICS_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_ID;
-const IS_PRODUCTION = process.env.NODE_ENV === "production";
 
 const MainPage = () => {
   const [defaultUIMode] = useLocalStorage("pk-portfolio-ui-mode", "dark");
@@ -30,13 +25,6 @@ const MainPage = () => {
       }),
     [selectedUIMode]
   );
-
-  useEffect(() => {
-    if (IS_PRODUCTION) {
-      ReactGA.initialize(GOOGLE_ANALYTICS_ID);
-      ReactGA.pageview(window.location.pathname);
-    }
-  }, []);
 
   return (
     <ThemeProvider theme={theme}>
